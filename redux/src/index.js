@@ -6,6 +6,8 @@ import {Provider, connect} from 'react-redux';
 // React Component
 class Counter extends React.Component {
     render() {
+
+        //导入父组件的属性
         const {value, onIncreaseClick} = this.props;
 
         console.log('render');
