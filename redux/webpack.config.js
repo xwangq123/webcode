@@ -1,8 +1,8 @@
 var webpack = require("webpack");
 
 module.exports = {
-    entry: './src/index.js',
-    devtool:'source-map',
+    entry: './src/default.js',//'./src/index.js',
+    devtool: 'source-map',
     output: {
         path: __dirname + '/src/dist',
         filename: 'bundle.js'
@@ -21,11 +21,11 @@ module.exports = {
 /*
  * 压缩代码配置项
  *
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        })
-    ]
-*/
+ plugins: [
+ new webpack.optimize.UglifyJsPlugin({
+ compress: {
+ warnings: false
+ }
+ })
+ ]
+ */

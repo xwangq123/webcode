@@ -38,6 +38,6 @@ var server = http.createServer(function (req, res) {
   res.end(file);
 });
 
-server.listen(3000, function () {
-  console.log('\x1B[32m', 'Server started http://127.0.0.1:3000');
+server.listen(3001, function () {
+  console.log('\x1B[32m', 'Server started http://127.0.0.1:3001');
 });
