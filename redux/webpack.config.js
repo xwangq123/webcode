@@ -2,6 +2,7 @@ var webpack = require("webpack");
 
 module.exports = {
     entry: './src/default.js',//'./src/index.js',
+    debug: true,
     devtool: 'source-map',
     output: {
         path: __dirname + '/src/dist',

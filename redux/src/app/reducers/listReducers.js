@@ -10,9 +10,10 @@ let createItem = text => {
     }
 }
 export default (state = [], action) => {
+    console.log(state);
     switch (action.type) {
         case ADD_ITEM:
-            return [createItem(action.text), ...state]
+            return Object.assign([], state, state.push(createItem(action.text)));
         case UPDATE_ITEM:
             return []
         default:
