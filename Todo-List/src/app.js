@@ -7,7 +7,7 @@ import Immutable from 'immutable';
 import  TodoApp from './TodoApp';
 
 const store = createStore(reducers, Immutable.fromJS({
-    visibility: 'all',
+    visibility: '',
     todos: Immutable.List.of()
 }), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 

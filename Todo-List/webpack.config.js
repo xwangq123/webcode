@@ -8,7 +8,7 @@ module.exports = {
     debug: true,
     devtool: 'source-map',
     entry: {
-        common: ['react', 'react-dom', 'redux', 'react-redux','immutable','redux-immutable'],
+        common: ['immutable', 'react', 'react-dom', 'redux', 'react-redux', 'director', 'redux-immutable'],
         client: './src/app.js'
     },
     resolve: {
