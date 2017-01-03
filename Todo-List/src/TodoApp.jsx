@@ -12,7 +12,7 @@ class TodoApp extends Component {
         super(props);
         this.state = {
             newTodo: ''
-        }
+        };
         this.handleNewTodoKeyDown = this.handleNewTodoKeyDown.bind(this);
         this.handleNewTodoChange = this.handleNewTodoChange.bind(this);
         this.handleAllChecked = this.handleAllChecked.bind(this);
@@ -127,7 +127,7 @@ const mapStateToProps = (state) => {
         todos: todos.toJS(),
         todosVisible: visibleTodos.toJS()
     };
-}
+};
 
 //bindActionCreators 把 action creators 转成拥有同名 keys 的对象，但使用 dispatch 把每个 action creator 包围起来，这样可以直接调用它们。
 const mapDispatchToProps = dispatch => bindActionCreators(actions, dispatch);

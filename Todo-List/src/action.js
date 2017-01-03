@@ -14,28 +14,29 @@ const setVisibility = visibility => ({
 const addTodo = newTodo => ({
     type: ADD_TODO,
     newTodo
-})
+});
 
 const deleteTodo = delId => ({
     type: DELETE_TODO,
     delId
-})
+});
 
 const checkedItem = (checkedId, checked) => ({
     type: CHECKED_ITEM,
     checkedId,
     checked
-})
+});
+
 const checkedAllItem = checked => ({
     type: CHECKED_ALL_ITEM,
     checked
-})
+});
 
 const updataTodo = (id, text) => ({
     type: UPDATE_TODO,
     id,
     text
-})
+});
 
 const clearChecked = () => ({type: CLEAR_CHECKED});
 

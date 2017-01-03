@@ -25,12 +25,16 @@ export default class TodoItem extends Component {
         this.props.onItemChange(this.props.todo.Id, e.target.checked);
     }
 
-    handleDoubleClick(prevProps) {
-        if (!prevProps.editing) {
+    handleDoubleClick() {
+        this.setState({"isEdit": true});
+    }
+
+    //组件渲染完后 给TextBox 获取焦点光标
+    componentDidUpdate() {
+        if (this.state.isEdit) {
             const node = ReactDOM.findDOMNode(this.refs.editTodo);
             node.focus();
             node.setSelectionRange(node.value.length, node.value.length);
-            this.setState({"isEdit": true});
         }
     }
 

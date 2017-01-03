@@ -20,7 +20,7 @@ const visibility = (state, action) => {
             state = action.visibility;
     }
     return state;
-}
+};
 const todos = (state, action) => {
     if (state === undefined || state === null)
         state = Immutable.List.of();
@@ -52,7 +52,7 @@ const todos = (state, action) => {
             break;
     }
     return state;
-}
+};
 
 export default (combineReducers({
     visibility,

@@ -32,5 +32,5 @@ const TodoFooter = props => {
             {clearButton}
         </footer>
     );
-}
+};
 export default  TodoFooter;
