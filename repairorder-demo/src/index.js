@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Redux,{createStore,compose,applyMiddleware} from 'redux';
+import  {createStore, applyMiddleware,compose} from 'redux';
 import {Provider} from 'react-redux'
 import RepairOrder from './RepairOrder';
 import reducers from './reducers';
 import state from './state';
 import Immutable from 'immutable';
-import {thunkMiddleware} from 'redux-thunk';
+import thunk from 'redux-thunk';
 
-const store = createStore(reducers, Immutable.fromJS(state),
-    compose(applyMiddleware(thunkMiddleware), window.devToolsExtension ? window.devToolsExtension() : f => f));
 
+const middleware = compose(applyMiddleware(thunk), window.devToolsExtension ? window.devToolsExtension() : f => f)
+const store = createStore(reducers, Immutable.fromJS(state), middleware);
 
 ReactDOM.render(
     <Provider store={store}>

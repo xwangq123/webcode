@@ -24,8 +24,8 @@ class RepairOrder extends Component {
     }
 }
 const mapStateToProps = state => {
-    const columns = state.getIn(['repairOrder', 'manage', 'columns']);
-    const dataSource = state.getIn(['repairOrder', 'manage', 'dataSource']);
+    const columns = state.getIn(['management', 'columns']);
+    const dataSource = state.getIn(['management', 'dataSource']);
     return {
         columns: columns.toJS(),
         dataSource: dataSource.toJS()

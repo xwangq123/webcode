@@ -1,6 +1,6 @@
 [
   {
-    "Id": 1,
+    "key": 1,
     "Code": "REPFT000796201603090001",
     "RepairType": 1,
     "VehiclePlate": "湘M888888",
@@ -14,7 +14,7 @@
     "State": 1
   },
   {
-    "Id": 2,
+    "key": 2,
     "Code": "REPFT000796201603090002",
     "RepairType": 1,
     "VehiclePlate": "京QD0Y01",
@@ -28,7 +28,7 @@
     "State": 1
   },
   {
-    "Id": 3,
+    "key": 3,
     "Code": "REPFT000796201603090003",
     "RepairType": 1,
     "VehiclePlate": "湘M888880",
@@ -42,7 +42,7 @@
     "State": 1
   },
   {
-    "Id": 4,
+    "key": 4,
     "Code": "REPFT000796201603090004",
     "RepairType": 1,
     "VehiclePlate": "沪M888888",
@@ -56,7 +56,7 @@
     "State": 1
   },
   {
-    "Id": 5,
+    "key": 5,
     "Code": "REPFT000796201603090005",
     "RepairType": 1,
     "VehiclePlate": "湘M888888",
@@ -70,7 +70,7 @@
     "State": 1
   },
   {
-    "Id": 6,
+    "key": 6,
     "Code": "REPFT000796201603090006",
     "RepairType": 1,
     "VehiclePlate": "湘M888888",
@@ -84,7 +84,7 @@
     "State": 1
   },
   {
-    "Id": 7,
+    "key": 7,
     "Code": "REPFT000796201603090007",
     "RepairType": 1,
     "VehiclePlate": "湘M888888",

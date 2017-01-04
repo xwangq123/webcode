@@ -1,21 +1,27 @@
 import Immutable from 'immutable';
 import {combineReducers} from 'redux-immutable';
-import actions from './action';
+import {QUERY} from './action';
 
-const repairOrder = (state, action) => {
+const management = (state, action) => {
     if (state === undefined || state === null)
         state = Immutable.Map();
     switch (action.type) {
-        case actions.QUERY:
-            state = Immutable.fromJS(JSON.parse(actions.json));
+        case QUERY:
+            state = state.setIn(['dataSource'],Immutable.fromJS(action.result));
             break;
     }
     return state;
 };
 
 
+const dataEditView = (state, action) => {
+    return state;
+}
+
+
 export  default  combineReducers({
-    repairOrder
+    management,
+    dataEditView
 });
 
 
