@@ -9,7 +9,7 @@ module.exports = {
     devtool: 'source-map',
     entry: {
         common: ['immutable', 'react', 'react-dom', 'redux', 'react-redux', 'director', 'redux-thunk', 'redux-immutable'],
-        client: './src/repairOrder.js'
+        client: './src/index.js'
     },
     resolve: {
         extensions: ["", ".webpack.js", ".web.js", ".js", ".jsx"]
@@ -27,6 +27,9 @@ module.exports = {
                 query: {
                     presets: ['es2015', 'react']
                 }
+            }, {
+                test: /\.css$/,
+                loader: 'style!css'
             }
         ]
     },
